@@ -1,0 +1,129 @@
+<!-- Gaya Tampilan (CSS) - Masukkan di paling atas postingan -->
+<style>
+  .soraflix-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .soraflix-player {
+    position: relative;
+    padding-bottom: 56.25%; /* Rasio 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+  .soraflix-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .soraflix-meta {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .soraflix-poster {
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+  }
+  .soraflix-poster img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .soraflix-info {
+    flex: 2;
+    min-width: 280px;
+  }
+  .soraflix-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #e50914; /* Warna merah khas streaming */
+  }
+  .soraflix-details {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #cccccc;
+  }
+  .soraflix-details span {
+    background: #333;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  .soraflix-synopsis {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #e5e5e5;
+  }
+  .soraflix-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  .btn-download {
+    background-color: #e50914;
+    color: white !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s;
+    display: inline-block;
+  }
+  .btn-download:hover {
+    background-color: #b81d24;
+  }
+</style>
+
+<!-- Struktur Konten (HTML) -->
+<div class="soraflix-container">
+
+  <!-- Pemutar Video (Ganti URL src dengan link video/embed Anda) -->
+  <div class="soraflix-player">
+    <iframe src="https://www.youtube.com/embed/EkCwaX3Xl5U?si=HHqnh8f4X3gNP9b7" allowfullscreen="true" frameborder="0"></iframe>
+  </div>
+
+  <!-- Tombol Aksi -->
+  <div class="soraflix-buttons">
+    <a class="btn-download" href="https://www.kiflix.site/p/download-streaming.html" target="_blank" rel="noopener">?? Download Movie</a>
+  </div>
+
+  <!-- Detail Informasi Film -->
+  <div class="soraflix-meta">
+    <!-- Gambar Poster -->
+    <div class="soraflix-poster">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxDHpntZEkKmbTpRwriavFq7Y7iK1QRfLozf28unI51DScUQMi1V_m7Bg&s=10" alt="Poster Film" />
+    </div>
+    
+    <!-- Teks Info -->
+    <div class="soraflix-info">
+      <h2 class="soraflix-title">Above & Below (2026)</h2>
+      
+      <div class="soraflix-details">
+        <span>? 8.5</span>
+        <span>Action, Sci-Fi</span>
+        <span>120 min</span>
+        <span>HD</span>
+      </div>
+      
+      <div class="soraflix-synopsis">
+        <p><strong>Sinopsis:</strong> Synopsis Their vacation turns into a disaster when they find a bag of cocaine belonging to a cartel at the bottom of the sea. An armed criminal group ambushes them and takes them hostage. Tatiana (Laura Marano) and Kaley (Christina Ochoa) are trapped in a shark cage in the depths of the sea. They are forced to retrieve the drugs while great white sharks surround them. Air supplies are running low, forcing Tatiana to find a way to survive the threat of sharks below and criminals above..</p>
+      </div>
+    </div>
+  </div>
+
+</div>
